@@ -1,0 +1,17 @@
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ssn:<http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix qudt:<http://data.nasa.gov/qudt/owl/qudt#> .
+@prefix cuahsi:<http://his.cuahsi.org/ontology/cuahsi#>  .
+@prefix wgs84_pos:<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix waves:<http://www.waves.org/ontology#> .
+<http://www.zone-waves.fr/2016/sector#Hubies_Haut> a ssn:Platform ;
+	rdfs:label "Hubies Haut" .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep1> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow1  a cuahsi:inputFlow .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep1> ssn:observes waves:flow1  .
+waves:flow1 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep1> a ssn:Sensor ;
+	rdfs:label "QS HH1 Dep1" ;
+	wgs84_pos:lat 4.8834914E1 ;
+	wgs84_pos:long 2.144792E0 .

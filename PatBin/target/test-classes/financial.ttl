@@ -1,0 +1,15 @@
+@prefix fin:<http://www.financial.org/ontology#> . 
+
+_:1 fin:origin _:2 ;
+	fin:debit _:3 .
+_:2 fin:id "BANK#4016" ;
+	fin:label "Postal Bank" .
+_:3 fin:money _:4 ;
+	fin:input _:5 ;
+	fin:output _:6 .
+_:4 fin:amount 450.00 ;
+	fin:unit "US$" .
+_:5 fin:name "Dupont" ;
+	fin:account "CCP VVV" .
+_:6 fin:name "Miller" ;
+	fin:account "CCP YYY" .

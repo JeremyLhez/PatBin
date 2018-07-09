@@ -1,0 +1,34 @@
+@prefix cuahsi:<http://his.cuahsi.org/ontology/cuahsi#>  .
+@prefix waves:<http://www.waves.org/ontology#> .
+@prefix ssn:<http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix wgs:<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+ssn:Sensor0 waves:id "QSHC1" ;
+	wgs:hasLocation "Platform1";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor1 waves:id "Q250" ;
+	wgs:hasLocation "Platform2";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor2 waves:id "Q257" ;
+	wgs:hasLocation "Platform3";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor3 waves:id "QDT01" ;
+	wgs:hasLocation "Platform1";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor4 waves:id "QELaval" ;
+	wgs:hasLocation "Platform2";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor5 waves:id "QSLaval" ;
+	wgs:hasLocation "Platform3";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor6 waves:id "Q600" ;
+	wgs:hasLocation "Platform1";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor7 waves:id "QDT17" ;
+	wgs:hasLocation "Platform2";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor8 waves:id "QPM8" ;
+	wgs:hasLocation "Platform3";
+	cuahsi:measure cuahsi:PressureMeasure .
+ssn:Sensor9 waves:id "QSBrezin" ;
+	wgs:hasLocation "Platform1";
+	cuahsi:measure cuahsi:PressureMeasure .

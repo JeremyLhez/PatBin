@@ -1,0 +1,7 @@
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix cuahsi:<http://his.cuahsi.org/ontology/cuahsi#>  .
+@prefix waves:<http://www.waves.org/ontology#> .
+_:11 waves:id "QELaval" ;
+	waves:date "30/03/2017" ;
+	cuahsi:measure _:12 .
+_:12 rdfs:value 8.9 .

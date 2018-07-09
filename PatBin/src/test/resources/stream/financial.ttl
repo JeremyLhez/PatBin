@@ -1,0 +1,59 @@
+@prefix fin:<http://www.financial.org/ontology#> .
+_:1 fin:origin _:2 ;
+fin:debit _:3 .
+_:2 fin:id "BANK#4016" .
+_:3 fin:money _:4 ;
+fin:input _:5 ;
+fin:output _:6 .
+_:4 fin:amount 450.00 ;
+fin:unit "US$" .
+_:5 fin:account "CCP XXX" .
+_:6 fin:account "CCP YYY" .
+
+@prefix fin:<http://www.financial.org/ontology#> .
+_:1 fin:origin _:2 ;
+fin:debit _:3 .
+_:2 fin:id "BANK#4016" .
+_:3 fin:money _:4 ;
+fin:input _:5 ;
+fin:output _:6 .
+_:4 fin:amount 370.00 ;
+fin:unit "US$" .
+_:5 fin:account "CCP XXX" .
+_:6 fin:account "CCP YYY" .
+
+@prefix fin:<http://www.financial.org/ontology#> .
+_:1 fin:origin _:2 ;
+fin:debit _:3 .
+_:2 fin:id "BANK#4016" .
+_:3 fin:money _:4 ;
+fin:input _:6 ;
+fin:output _:5 .
+_:4 fin:amount 240.00 ;
+fin:unit "US$" .
+_:5 fin:account "CCP XXX" .
+_:6 fin:account "CCP YYY" .
+
+@prefix fin:<http://www.financial.org/ontology#> .
+_:1 fin:origin _:2 ;
+fin:debit _:3 .
+_:2 fin:id "BANK#4013" .
+_:3 fin:money _:4 ;
+fin:input _:5 ;
+fin:output _:6 .
+_:4 fin:amount 450.00 ;
+fin:unit "US$" .
+_:5 fin:account "CCP XXX" .
+_:6 fin:account "CCP ZZZ" .
+
+@prefix fin:<http://www.financial.org/ontology#> .
+_:1 fin:origin _:2 ;
+fin:debit _:3 .
+_:2 fin:id "BANK#4016" .
+_:3 fin:money _:4 ;
+fin:input _:5 ;
+fin:output _:6 .
+_:4 fin:amount 223.00 ;
+fin:unit "€" .
+_:5 fin:account "CCP YYY" .
+_:6 fin:account "CCP YYY" .

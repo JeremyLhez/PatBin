@@ -1,0 +1,107 @@
+@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ssn:<http://purl.oclc.org/NET/ssnx/ssn#> .
+@prefix qudt:<http://data.nasa.gov/qudt/owl/qudt#> .
+@prefix cuahsi:<http://his.cuahsi.org/ontology/cuahsi#>  .
+@prefix wgs84_pos:<http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix waves:<http://www.waves.org/ontology#> .
+<http://www.zone-waves.fr/2016/sector#Hubies_Bas> a ssn:Platform ;
+	rdfs:label "Hubies Haut" .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep1> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow1  a cuahsi:inputFlow .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep1> ssn:observes waves:flow1  .
+waves:flow1 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep1> a ssn:Sensor ;
+	rdfs:label "QS HH1 Dep1" ;
+	wgs84_pos:lat 4.8834914E1 ;
+	wgs84_pos:long 2.144792E0 .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep2> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow2  a cuahsi:inputFlow .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep2> ssn:observes waves:flow2  .
+waves:flow2 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#QS_HH1_Dep2> a ssn:Sensor ;
+	rdfs:label "QS HH1 Dep2" ;
+	wgs84_pos:lat 4.8834914E1 ;
+	wgs84_pos:long 2.144792E0 .
+<http://www.zone-waves.fr/2016/sensor#QS_HH2_Dep1> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow3  a cuahsi:inputFlow .
+<http://www.zone-waves.fr/2016/sensor#QS_HH2_Dep1> ssn:observes waves:flow3  .
+waves:flow3 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#QS_HH2_Dep1> a ssn:Sensor ;
+	rdfs:label "QS HH2 Dep1" ;
+	wgs84_pos:lat 4.8834599E1 ;
+	wgs84_pos:long 2.144864E0 .
+<http://www.zone-waves.fr/2016/sensor#QS_HH2_Dep2> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow4  a cuahsi:inputFlow .
+<http://www.zone-waves.fr/2016/sensor#QS_HH2_Dep2> ssn:observes waves:flow4  .
+waves:flow4 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#QS_HH2_Dep2> a ssn:Sensor ;
+	rdfs:label "QS HH2 Dep2" ;
+	wgs84_pos:lat 4.8834599E1 ;
+	wgs84_pos:long 2.144864E0 .
+<http://www.zone-waves.fr/2016/sensor#Q_250HP> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow5  a cuahsi:inputFlow .
+<http://www.zone-waves.fr/2016/sensor#Q_250HP> ssn:observes waves:flow5  .
+waves:flow5 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#Q_250HP> a ssn:Sensor ;
+	rdfs:label "Q 250HP" ;
+	wgs84_pos:lat 4.8851827E1 ;
+	wgs84_pos:long 2.110242E0 .
+<http://www.zone-waves.fr/2016/sensor#Q_600HP> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow6  a cuahsi:inputFlow .
+<http://www.zone-waves.fr/2016/sensor#Q_600HP> ssn:observes waves:flow6  .
+waves:flow6 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#Q_600HP> a ssn:Sensor ;
+	rdfs:label "Q 600HP" ;
+	wgs84_pos:lat 4.8851827E1 ;
+	wgs84_pos:long 2.110242E0 .
+<http://www.zone-waves.fr/2016/sensor#Q_DT02> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow7 a cuahsi:outputFlow .
+<http://www.zone-waves.fr/2016/sensor#Q_DT02> ssn:observes waves:flow7  .
+waves:flow7 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#Q_DT02> a ssn:Sensor ;
+	rdfs:label "Q DT02" ;
+	wgs84_pos:lat 4.8851473E1 ;
+	wgs84_pos:long 2.190468E0 .
+<http://www.zone-waves.fr/2016/sensor#Q_DT04> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow8 a cuahsi:outputFlow .
+<http://www.zone-waves.fr/2016/sensor#Q_DT04> ssn:observes waves:flow8  .
+waves:flow8 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#Q_DT04> a ssn:Sensor ;
+	rdfs:label "Q DT04" ;
+	wgs84_pos:lat 4.8856321E1 ;
+	wgs84_pos:long 2.144909E0 .
+<http://www.zone-waves.fr/2016/sensor#Q_DT17> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow9 a cuahsi:outputFlow .
+<http://www.zone-waves.fr/2016/sensor#Q_DT17> ssn:observes waves:flow9  .
+waves:flow9 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#Q_DT17> a ssn:Sensor ;
+	rdfs:label "Q DT17" ;
+	wgs84_pos:lat 4.8830986E1 ;
+	wgs84_pos:long 2.131169E0 .
+<http://www.zone-waves.fr/2016/sensor#Q_DT18> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow10 a cuahsi:outputFlow .
+<http://www.zone-waves.fr/2016/sensor#Q_DT18> ssn:observes waves:flow10  .
+waves:flow10 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#Q_DT18> a ssn:Sensor ;
+	rdfs:label "Q DT18" ;
+	wgs84_pos:lat 4.8844917E1 ;
+	wgs84_pos:long 2.086078E0 .
+<http://www.zone-waves.fr/2016/sensor#QE_HC1> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow11 a cuahsi:outputFlow .
+<http://www.zone-waves.fr/2016/sensor#QE_HC1> ssn:observes waves:flow11  .
+waves:flow11 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#QE_HC1> a ssn:Sensor ;
+	rdfs:label "QE HC1" ;
+	wgs84_pos:lat 4.8816025E1 ;
+	wgs84_pos:long 2.150636E0 .
+<http://www.zone-waves.fr/2016/sensor#QE_HC2> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow12 a cuahsi:outputFlow .
+<http://www.zone-waves.fr/2016/sensor#QE_HC2> ssn:observes waves:flow12  .
+waves:flow12 cuahsi:relatedTo <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+<http://www.zone-waves.fr/2016/sensor#QE_HC2> a ssn:Sensor ;
+	rdfs:label "QE HC2" ;
+	wgs84_pos:lat 4.8815743E1 ;
+	wgs84_pos:long 2.150626E0 .
+<http://www.zone-waves.fr/2016/sensor#QE_H-Brezin> ssn:onPlatform <http://www.zone-waves.fr/2016/sector#Hubies_Haut> .
+waves:flow13 a cuahsi:outputFlow .
