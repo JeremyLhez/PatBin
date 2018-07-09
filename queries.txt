@@ -1,0 +1,29 @@
+SELECT ?x ?y WHERE {
+      ?a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?b .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#telephone> "xxx-xxx-xxxx" .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#researchInterest> "Research20" .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#name> ?x .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#emailAddress> ?y .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?c .
+}
+
+SELECT ?x ?v WHERE {
+      ?a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?b .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#telephone> ?v .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#researchInterest> ?c .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#name> ?x .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#emailAddress> ?y .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?d .
+      ?d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?z .
+      FILTER regex(str(?v), "xxx-xxx-xxxx") .
+}
+
+SELECT ?x (COUNT(?z) AS ?count) WHERE {
+      ?a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?b .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#telephone> "xxx-xxx-xxxx" .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#researchInterest> ?c .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#name> ?x .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#emailAddress> ?y .
+      ?a <http://swat.cse.lehigh.edu/onto/univ-bench.owl#undergraduateDegreeFrom> ?d .
+      ?d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?z .
+} GROUP BY ?x
